@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  table.form-table {
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    font-family: sans-serif;
+    border-collapse: separate;
+    border-spacing: 15px; /* Memberi jarak antar kolom/baris */
+  }
+  .form-table input[type="text"],
+  .form-table input[type="email"],
+  .form-table input[type="tel"],
+  .form-table input[type="password"],
+  .form-table select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+  }
+  .form-table input[type="submit"] {
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<form>
+  <table class="form-table">
+    <tr>
+      <th colspan="2" style="font-size: 24px; padding-bottom: 20px;">Create Account</th>
+    </tr>
+    <tr>
+      <td><input type="text" placeholder="First Name"></td>
+      <td><input type="text" placeholder="Last Name"></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <select>
+          <option value="" disabled selected>Country</option>
+          <option value="indonesia">Indonesia</option>
+          <option value="japan">Japan</option>
+          <option value="south_korea">South Korea</option>
+          <option value="china">China</option>
+          <option value="other">Other</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><input type="email" placeholder="Email Address"></td>
+      <td><input type="tel" placeholder="Phone Number"></td>
+    </tr>
+    <tr>
+      <td><input type="password" placeholder="Password"></td>
+      <td><input type="password" placeholder="Confirm Password"></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <input type="checkbox" id="terms">
+        <label for="terms">Terms and Condition</label>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center; padding-top: 10px;">
+        <input type="submit" value="Create">
+      </td>
+    </tr>
+  </table>
+</form>
+
+</body>
+</html>

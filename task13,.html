@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  table.emp-table {
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    font-family: sans-serif;
+    border-collapse: separate;
+    border-spacing: 15px 10px;
+    width: 600px;
+  }
+  .emp-table label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+  }
+  .emp-table input[type="text"],
+  .emp-table input[type="email"],
+  .emp-table input[type="tel"],
+  .emp-table input[type="date"],
+  .emp-table select,
+  .emp-table textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .emp-table textarea {
+    resize: vertical;
+  }
+  .emp-table .section-title {
+    color: #3b82f6;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 15px;
+  }
+  /* Bikin garis di samping judul section */
+  .emp-table hr.section-line {
+    border: none;
+    border-top: 2px solid #3b82f6;
+    margin: 0;
+    display: inline-block;
+    width: 60%;
+    vertical-align: middle;
+  }
+  .emp-table input[type="submit"] {
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<form>
+  <table class="emp-table">
+    <tr>
+      <th colspan="2" style="font-size: 24px; padding-bottom: 15px;">Employee Details</th>
+    </tr>
+
+    <tr>
+      <td colspan="2" class="section-title">
+        01. Personal Information <hr class="section-line">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Employee Name <span style="color:red">*</span></label>
+        <input type="text" placeholder="First Name">
+      </td>
+      <td>
+        <label>Last Name</label>
+        <input type="text" placeholder="Last Name">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Starting Date</label>
+        <input type="date">
+      </td>
+      <td>
+        <label>Birth Date</label>
+        <input type="date">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Employee Type</label>
+        <select>
+          <option value="" disabled selected>Select</option>
+          <option value="full">Full Time</option>
+          <option value="part">Part Time</option>
+        </select>
+      </td>
+      <td style="vertical-align: middle;">
+        <label>Gender</label>
+        <input type="radio" id="male" name="gender" checked> <label for="male" style="display:inline;">Male</label>
+        &nbsp;&nbsp;
+        <input type="radio" id="female" name="gender"> <label for="female" style="display:inline;">Female</label>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Position</label>
+        <input type="text" placeholder="Position">
+      </td>
+      <td></td> </tr>
+
+    <tr>
+      <td colspan="2" class="section-title">
+        02. Location <hr class="section-line" style="width: 75%;">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>City</label>
+        <input type="text" placeholder="City">
+      </td>
+      <td>
+        <label>State</label>
+        <input type="text" placeholder="State">
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">
+        <label>ZIP</label>
+        <input type="text" placeholder="ZIP">
+      </td>
+      <td style="vertical-align: top;">
+        <label>Address</label>
+        <textarea placeholder="Address" rows="4"></textarea>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2" class="section-title">
+        03. Contact Information <hr class="section-line" style="width: 60%;">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Phone</label>
+        <input type="tel" placeholder="Phone">
+      </td>
+      <td>
+        <label>Email</label>
+        <input type="email" placeholder="Email">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center; padding-top: 20px;">
+        <input type="submit" value="Register">
+      </td>
+    </tr>
+  </table>
+</form>
+
+</body>
+</html>
